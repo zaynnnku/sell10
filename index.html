@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vynaa's Biolink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: url('https://itzpire.com/file/14e501f792c8.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 420px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            backdrop-filter: blur(12px);
+        }
+
+        .header {
+            background: linear-gradient(45deg, #87CEFA, #4682B4);
+            padding: 25px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            margin: 15px 0;
+            color: #ffffff;
+            font-size: 26px;
+        }
+
+        .header p {
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        .links {
+            padding: 25px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 18px 0;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #ffffff;
+            background: linear-gradient(45deg, #1E90FF, #00BFFF);
+            padding: 16px 20px;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-btn img {
+            width: 36px;
+            height: 36px;
+            margin-right: 14px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 15px;
+            padding: 15px;
+            font-size: 13px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img id="profile-image" src="" alt="Profile Image">
+            <h1 id="profile-name"></h1>
+            <p id="profile-description"></p>
+        </div>
+        <div class="links" id="social-links">
+            <!-- Social links will be injected by JavaScript -->
+        </div>
+        <footer>
+            <p>© 2025 Vynaa Valerie | Crafted with care</p>
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+</body>
+</html>
